@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, from 'react';
 import Gif from './gif.jsx';
 
 
@@ -9,6 +9,5 @@ const GifList = (props) => {
     </div>
   );
 };
-
 
 export default GifList;
