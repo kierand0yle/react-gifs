@@ -20,7 +20,8 @@ class App extends Component {
   search = (query) => {
     giphy({ apiKey: GIPHY_API_KEY, https: true }).search( {
       q: query,
-      rating: 'g'
+      rating: 'g',
+      limit: 10
     }, (err, res) => {
       this.setState({
         gifs: res.data
